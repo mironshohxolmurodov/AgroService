@@ -1,0 +1,32 @@
+/* Simple styles for AgroService demo */
+:root{
+  --bg:#0b1220; --card:#0f1724; --accent:#34d399; --muted:#9aa4b2; --glass: rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Arial;background:linear-gradient(180deg,var(--bg),#071023);color:#e6eef8}
+.container{max-width:1000px;margin:0 auto;padding:28px}
+.site-header{position:sticky;top:0;background:rgba(2,6,23,0.6);backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,0.03);z-index:20}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,#065f46,#34d399);display:flex;align-items:center;justify-content:center;font-weight:800;color:#052018}
+.nav{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.nav a{color:var(--muted);text-decoration:none;font-weight:600}
+.nav a:hover{color:#fff}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);margin-bottom:18px}
+.highlight{background:var(--glass);padding:10px;border-radius:8px;margin-top:8px;color:var(--muted)}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.member{display:flex;gap:12px;align-items:flex-start}
+.avatar{width:56px;height:56px;border-radius:8px;background:#071427;display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--accent)}
+.timeline{display:flex;flex-direction:column;gap:10px}
+.step{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.02)}
+.footer{display:flex;flex-direction:column;gap:6px}
+.demo-form{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:end}
+.demo-form label{font-size:13px;color:var(--muted)}
+.demo-form input, .demo-form select{padding:8px;border-radius:8px;background:#071427;border:1px solid rgba(255,255,255,0.03);color:#e6eef8}
+.demo-form button{grid-column:1 / -1;padding:10px;border-radius:8px;background:var(--accent);color:#052018;border:none;font-weight:700;cursor:pointer}
+.results{margin-top:12px;background:rgba(0,0,0,0.2);padding:12px;border-radius:8px}
+.muted{color:var(--muted)}
+a{color:var(--accent)}
+@media (max-width:700px){
+  .demo-form{grid-template-columns:1fr}
+  .nav{display:none}
+}

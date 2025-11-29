@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AgroService — Demo (Hackathon Stage 1)</title>
+  <meta name="description" content="AgroService — AI asosida agro-xizmatlar platformasi (Hackathon demo)" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <div class="logo">AS</div>
+        <div>
+          <h1>AgroService</h1>
+          <p class="tag">AI yordamida fermerlar va xizmat ko'rsatuvchilarni bog'lovchi demo</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#problem">Muammo → Yechim</a>
+        <a href="#team">Jamoa</a>
+        <a href="#why">Nega biz</a>
+        <a href="#roadmap">Yo'l xaritasi</a>
+        <a href="#implementation">Qanday amalga oshiramiz</a>
+        <a href="#demo">Demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- 1. Muammo -> Yechim -->
+    <section id="problem" class="card">
+      <h2>1. Muammo → Yechim</h2>
+      <h3>Muammo</h3>
+      <p>O‘zbekiston qishloq xo‘jaligida ko‘p fermerlar texnika va xizmatlarni topishda qiyinchilikka duch keladi. Asosiy og‘riq nuqtalari:</p>
+      <ul>
+        <li>Traktor, kombayn, yer haydash yoki sug‘orish tizimi o‘rnatadigan mutaxassisni topish qiyin.</li>
+        <li>Xizmat narxlari bir xil emas — oshirilgan yoki adolatsiz narxlar mavjud.</li>
+        <li>Ishonchli pudratchini ajratish qiyin: soxta profillar, kelmaslik, sifatsiz xizmat.</li>
+        <li>Fermerlar telefon orqali tanish-bilish orqali izlaydi — vaqt va kafolat yo'q.</li>
+        <li>AgroBank subsidiya/kredit doirasidagi xizmatlar nazoratsiz bo‘lishi mumkin.</li>
+      </ul>
+
+      <h3>Yechim — AgroService (qisqacha)</h3>
+      <p>AI asosida ishlaydigan agro-xizmatlar platformasi: fermerlar va texnika/xizmat egalari bir joyda bog‘lanadi. Platforma quyidagi asosiy funksiyalarni taklif etadi:</p>
+      <ul>
+        <li><strong>AI Matching</strong> — foydalanuvchi talabi (lokatsiya, maydon, ekin, vaqt) asosida eng mos 3–5 provayder.</li>
+        <li><strong>AI Narx Baholash</strong> — bozor ma'lumotlari asosida adolatli narx diapazoni (min–avg–max).</li>
+        <li><strong>Ishonchlilik Reytingi (Risk Detection)</strong> — profil va sharhlar tahlili orqali xavf balli.</li>
+        <li><strong>Avtomatik Jadval (Smart Scheduling)</strong> — provayderning bo‘sh va band vaqtlariga qarab ideal vaqtni tavsiya qiladi.</li>
+      </ul>
+      <p class="highlight">Afzalliklar: tez, adolatli, ishonchli xizmat — fermerlar uchun; yangi mijozlar va aniq jadval — provayderlar uchun; shaffoflik — AgroBank uchun.</p>
+    </section>
+
+    <!-- 2. Jamoa -->
+    <section id="team" class="card">
+      <h2>2. Jamoa</h2>
+      <div class="team-grid">
+        <div class="member">
+          <div class="avatar">A</div>
+          <div>
+            <h4>Asal — Research & Presentation Lead</h4>
+            <p><strong>Ko‘nikmalar:</strong> loyihalarni tadqiq qilish, UX, pitching, kontent yozish, jamoa boshqaruvi.</p>
+            <p><strong>Havola:</strong> <a href="https://www.linkedin.com/in/asal-botirova" target="_blank">LinkedIn</a></p>
+            <p><strong>Jamoaga qo‘shayotgan foyda:</strong> muammoni bozor nuqtai nazaridan tushuntirish, pitch va taqdimot.</p>
+          </div>
+        </div>
+
+        <div class="member">
+          <div class="avatar">E</div>
+          <div>
+            <h4>Elbek — Full-Stack Web Developer</h4>
+            <p><strong>Ko‘nikmalar:</strong> JavaScript, React/Next.js, Node.js, REST API, GitHub.</p>
+            <p><strong>Havolalar:</strong> <a href="https://www.linkedin.com/in/elbekdamirov/" target="_blank">LinkedIn</a> • <a href="https://github.com/elbekdamirov" target="_blank">GitHub</a></p>
+            <p><strong>Jamoaga qo‘shayotgan foyda:</strong> frontend va deploy, dashboardlar, integratsiya.</p>
+          </div>
+        </div>
+
+        <div class="member">
+          <div class="avatar">M</div>
+          <div>
+            <h4>Mironshoh — Python & AI Developer</h4>
+            <p><strong>Ko‘nikmalar:</strong> Python, AI integratsiya, data processing.</p>
+            <p><strong>Havola:</strong> <a href="https://www.linkedin.com/in/mironshoh-xolmurodov/" target="_blank">LinkedIn</a></p>
+            <p><strong>Jamoaga qo‘shayotgan foyda:</strong> AI Matching algoritmi, price estimator modellari.</p>
+          </div>
+        </div>
+      </div>
+
+      <h4>Texnologiyalar staki</h4>
+      <ul>
+        <li><strong>Frontend:</strong> React / Next.js, TailwindCSS</li>
+        <li><strong>Backend:</strong> Python (FastAPI), PostgreSQL</li>
+        <li><strong>AI:</strong> Python (Pandas, NumPy), rule-based engine, scikit-learn, GPT API (chatbot/help)</li>
+        <li><strong>Infra:</strong> GitHub, Vercel / Netlify / Railway</li>
+      </ul>
+    </section>
+
+    <!-- 3. Nega jamoa -->
+    <section id="why" class="card">
+      <h2>3. Nima uchun aynan biz bu muammoni hal qila olamiz</h2>
+      <ol>
+        <li><strong>Muammoni chuqur tushunish:</strong> Biz mahalliy agrar bozorda real muammolarni bilamiz — telefon orqali izlash, noto‘g‘ri narxlar, ishonchsiz provayderlar.</li>
+        <li><strong>To‘liq komplementar ko‘nikmalar:</strong> Asal (strategy & research), Elbek (frontend/backend), Mironshoh (AI) — loyiha talablarini qamrab oladi.</li>
+        <li><strong>Texnika + bozor bilimlari:</strong> Biz AI vositalarini domain-ga moslashtirishga tayyormiz: rule-based matching, price estimator va fraud detection.</li>
+        <li><strong>Mahalliy moslik:</strong> Hududlarga qarab narx va xizmat tushunchasini bilamiz, AgroBank tizimlarini hisobga olamiz.</li>
+        <li><strong>Motivatsiya:</strong> Hakatondan keyin ham davom ettirish rejasi — MVP → pilot → launch.</li>
+      </ol>
+    </section>
+
+    <!-- 4. Yo'l xaritasi -->
+    <section id="roadmap" class="card">
+      <h2>4. Yo'l xaritasi: Idea → Prototype → MVP → Launched</h2>
+      <div class="timeline">
+        <div class="step">
+          <h4>Idea (Hozir)</h4>
+          <p>Muammo tahlili, yechim konsepti, UI/UX prototiplar — G'oya va prototiplash bosqichi.</p>
+        </div>
+        <div class="step">
+          <h4>Prototype (2-4 kun)</h4>
+          <p>Frontend prototipi (React) va oddiy rule-based AI demo; taqdimot uchun interaktiv sahifa.</p>
+        </div>
+        <div class="step">
+          <h4>MVP (1–2 hafta)</h4>
+          <p>Fermer buyurtma sahifasi, provayder paneli, AI matching (server-side), price estimator, profiling va oddiy admin.</p>
+        </div>
+        <div class="step">
+          <h4>Launched (after tests)</h4>
+          <p>Beta test (3–5 fermer), xavfsizlik, mobil optimizatsiya, AgroBank integratsiyasi va rasmiy ishga tushirish.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Implementation plan -->
+    <section id="implementation" class="card">
+      <h2>5. Yechimni qanday amalga oshirishni rejalashtirayapmiz</h2>
+      <h4>Bosqichlar (an’anaviy):</h4>
+      <ol>
+        <li><strong>Arxitektura va reja (2 kun):</strong> DB sxemasi, API'lar, AI modul joylashuvi, Figma prototip.</li>
+        <li><strong>Frontend prototip (2-3 kun):</strong> React/Next.js, Tailwind, responsive dizayn.</li>
+        <li><strong>Backend va API (3-5 kun):</strong> FastAPI, PostgreSQL, auth (JWT), CRUD endpointlar.</li>
+        <li><strong>AI modullar integratsiyasi (3-7 kun):</strong> Rule-based matching, price estimator (statistical), risk detection (rule-based → ML).</li>
+        <li><strong>Sinov va birlashtirish (4-5 kun):</strong> End-to-end test, demo tayyorlash.</li>
+        <li><strong>Beta testi va feedback:</strong> 3–5 fermer bilan sinov, user feedbackga ko‘ra sozlash.</li>
+        <li><strong>Launch:</strong> Deploy (Vercel/Netlify + Railway), marketing va region bo‘yicha kengaytirish.</li>
+      </ol>
+
+      <h4>Texnologiyalar va AI vositalari</h4>
+      <ul>
+        <li><strong>Frontend:</strong> React / Next.js, TailwindCSS</li>
+        <li><strong>Backend:</strong> Python FastAPI, PostgreSQL, SQLAlchemy</li>
+        <li><strong>AI & Data:</strong> Pandas, NumPy, scikit-learn, rule-based engine. Chatbot/UX yordam uchun GPT API (OpenAI) — foydalanuvchi savollariga tez yordam.</li>
+        <li><strong>Infra:</strong> GitHub actions (CI), Vercel/Netlify (frontend), Railway/Render (backend)</li>
+        <li><strong>Monitoring:</strong> Sentry, basic logging, analytics</li>
+      </ul>
+
+      <h4>Hakaton uchun minimal AI qarorlari (qisqacha)</h4>
+      <ol>
+        <li><strong>AI Matching:</strong> Avval rule-based scoring (lokatsiya, xizmat turi, rating, availability). Keyin kNN yoki ranking modeli.</li>
+        <li><strong>Price Estimator:</strong> Hudud va xizmat bo'yicha statistik min/avg/max (hakaton uchun rule-based hisob).</li>
+        <li><strong>Risk Detection:</strong> Profil to‘liq emasligi, past reyting, tez-tez bekor qilish — rule-based risk score.</li>
+      </ol>
+    </section>
+
+    <!-- Demo interactive -->
+    <section id="demo" class="card">
+      <h2>Demo (onlayn interaktiv)</h2>
+      <p>Quyidagi demo sahifada oddiy AI Matching va Price Estimator (client-side, rule-based) ishlaydi. Hakaton taqdimotida frontend sahifasini ko‘rsatish yetarli bo‘ladi.</p>
+
+      <form id="demo-form" class="demo-form">
+        <label>Hudud:</label>
+        <input id="fld-location" value="Toshkent" />
+        <label>Xizmat turi:</label>
+        <select id="fld-service">
+          <option value="traktor">traktor</option>
+          <option value="kombayn">kombayn</option>
+          <option value="yer haydash">yer haydash</option>
+          <option value="sug‘orish tizimi">sug‘orish tizimi</option>
+        </select>
+        <label>Maydon (gektar):</label>
+        <input id="fld-hectares" type="number" value="5" min="1" />
+        <button id="btn-run">AI Matchni ishga tushurish</button>
+      </form>
+
+      <div id="demo-results" class="results"></div>
+    </section>
+
+    <footer class="card footer">
+      <p>AgroService — Hackathon Stage 1 demo. Jamoa: Asal, Elbek, Mironshoh. &middot; <a href="#contact">Kontakt</a></p>
+      <p class="muted">Siz uchun tayyor fayllarni yuklab olib, Netlify/Vercelga joylashtirishingiz mumkin — men buni ZIP formatida tayyorlab berdim.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
